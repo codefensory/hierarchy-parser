@@ -1,10 +1,10 @@
-import hierarchyParser from '../src'
+import { hierarchyParserOld as hierarchyParser } from '../src'
 
 function generateHighData(length: number) {
   const data = []
 
   for (let i = 0; i < length; i++) {
-    const isParent = Math.random() * 100 < 20 || i === 0
+    const isParent = Math.random() * 100 < 5 || i === 0
 
     data.push({
       id: i,
